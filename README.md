@@ -59,7 +59,7 @@ validate(TipsSchema, tips, eager=False)
 
 ## Installation
 
-`pip install git+https://github.com/chris-mcdo/polars-validate`
+`pip install polars-validate`
 
 ## Features
 
