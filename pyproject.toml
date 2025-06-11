@@ -6,7 +6,7 @@ build-backend = "pdm.backend"
 name = "polars-validate"
 dynamic = ["version"]
 authors = [{name = "Christopher McDonald"}]
-description = "Polars DataFrame validation using type hints"
+description = "Validate Polars DataFrames using type hints"
 readme = "README.md"
 license-files = ["LICENSE"]
 keywords = ["polars", "validation", "schema", "series", "dataframe", "data", "typing"]

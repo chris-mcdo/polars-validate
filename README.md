@@ -1,8 +1,8 @@
-# polars_validate: Polars DataFrame validation using type hints
+# polars_validate: validate Polars DataFrames using type hints
 
-Simple DataFrame validation, based on type hints.
+Simple but powerful DataFrame validation library, based on type hints and polars expressions.
 
-```
+```python
 from typing import Annotated
 
 import polars as pl
@@ -75,9 +75,9 @@ In-built validation:
 
 For inspiration, a few examples of how polars expressions can be used for validation:
 
-```
-# THIS represents the the current Series / column.
+```python
 from polars_validate import THIS
+# THIS represents the the current Series / column.
 
 # series-based validation
 is_even = (THIS % 2) == 0
@@ -94,7 +94,7 @@ at_least_one = pl.any_horizontal("a", "b", "c")
 
 Arbitrary custom validation is also supported:
 
-```
+```python
 def is_valid_index(s: pl.Series) -> bool:
     return s.is_sorted() and s[0] == 1
 
@@ -119,7 +119,7 @@ Define validation for individual Series (or DataFrame columns) using type annota
 
 E.g. for series:
 
-```
+```python
 # simple schema - just validate type
 SimpleSeriesSchema = pl.Float32
 
