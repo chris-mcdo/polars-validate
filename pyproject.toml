@@ -4,10 +4,36 @@ build-backend = "pdm.backend"
 
 [project]
 name = "polars-validate"
-version = "0.1.0"
-description = "Polars DataFrame validation, based on type hints."
+dynamic = ["version"]
+authors = [{name = "Christopher McDonald"}]
+description = "Polars DataFrame validation using type hints"
 readme = "README.md"
+license-files = ["LICENSE"]
+keywords = ["polars", "validation", "schema", "series", "dataframe", "data", "typing"]
 requires-python = ">=3.9"
 dependencies = [
     "polars>=1",
 ]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Repository = "http://github.com/chris-mcdo/polars-validate"
+
+[tool.pdm]
+version = { source = "file", path = "polars_validate/__init__.py" }

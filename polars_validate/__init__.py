@@ -35,6 +35,8 @@ from polars_validate.series import (
     TypeValidator,
 )
 
+__version__ = "0.1.0"
+
 __all__ = [
     # ---
     "FloatType",

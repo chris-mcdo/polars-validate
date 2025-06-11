@@ -1,4 +1,4 @@
-# polars_validate: Validate Polars DataFrames
+# polars_validate: Polars DataFrame validation using type hints
 
 Simple DataFrame validation, based on type hints.
 
