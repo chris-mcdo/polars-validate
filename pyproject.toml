@@ -1,0 +1,9 @@
+[project]
+name = "polars-validate"
+version = "0.1.0"
+description = "Polars DataFrame validation, based on type hints."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "polars>=1",
+]
